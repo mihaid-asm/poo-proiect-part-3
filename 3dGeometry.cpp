@@ -97,10 +97,6 @@ public:
         for(int i=0;i<P.no_points;i++){
             in>>P.points[i];
             Point Z = P.points[i];
-            if(std::find(P.points.begin(), P.points.end(), Z) != std::end(P.points)){
-                P.no_points--;
-                i--;
-            }
         }
         return in;
     }
